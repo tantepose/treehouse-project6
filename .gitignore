@@ -17,7 +17,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-.node_modules
+# my ignores
+node_modules
+data
+scraper-error.log
 
 # =========================
 # Operating System Files
