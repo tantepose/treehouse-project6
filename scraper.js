@@ -48,8 +48,9 @@ function getShirtUrls (url) {
 			if (response.statusCode === 200 && !error) {
 				var shirtUrls = []; //empty array for storing URLs
 				var $ = response.$; //get all HTML in Jquery format
-
-				$('.products').find('a').each(function() { //find the URLs, loop thru them
+				
+				//find the URLs, and loop thru them
+				$('.products').find('a').each(function() {
 					shirtUrls.push($(this).attr('href')); //store them in the array
 					
 					//check if we now have all the URLs we need
@@ -83,6 +84,7 @@ function scrapeShirts (shirtUrls) {
 
 	//loop thru all shirtUrls
 	shirtUrls.forEach (function (shirtUrl) {
+		
 		//start the crawler for current shirt
 		shirtCrawler.direct({
 			uri: rootUrl + '/' + shirtUrl,
