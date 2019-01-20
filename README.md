@@ -2,6 +2,7 @@
 # "Content Scraper"
 
 by Ole Petter Baugerød Stokke
+
 www.olepetterstokke.no/treehouse/project6
 
 Node.js command line application for scraping
